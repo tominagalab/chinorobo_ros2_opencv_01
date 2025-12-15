@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'image_splitter_node=chinorobo_ros2_opencv_01.image_splitter:main',
         ],
     },
 )
