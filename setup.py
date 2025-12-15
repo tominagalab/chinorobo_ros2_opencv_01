@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'image_splitter_node=chinorobo_ros2_opencv_01.image_splitter:main',
+            'image_grayscale2binary_node=chinorobo_ros2_opencv_01.image_grayscale2binary:main',
         ],
     },
 )
