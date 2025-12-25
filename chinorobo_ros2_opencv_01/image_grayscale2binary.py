@@ -83,7 +83,7 @@ def main(args=None):
     # グレースケール画像を入力とするトピックをサブスクライブ
     image_subscriber = node.create_subscription(
         Image,
-        '/grayscale_image', # サブスクライブするトピック名
+        '/image_grayscale', # サブスクライブするトピック名
         image_callback,
         10
     )
