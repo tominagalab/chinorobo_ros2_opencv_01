@@ -18,11 +18,11 @@ $git clone https://github.com/tominagalab/chinorobo_ros2_opencv_01.git
 ### __*image_splitter_node*__
 3チャンネル画像をチャンネル分解して1チャンネル画像×3を出力するノード
 - サブスクライバー（Subscribers）
-  - *image_raw* : 3チャンネルの入力画像．
+  - __image_raw__ : 3チャンネルの入力画像．
 - パブリッシャー（Publishers）
-  - *image/b_channnel* : 青チャンネル強度画像（1チャンネルグレースケール画像）．
-  - *image/g_channnel* : 緑チャンネル強度画像（1チャンネルグレースケール画像）．
-  - *image/r_channnel* : 赤チャンネル強度画像（1チャンネルグレースケール画像）．
+  - __image/b_channnel__ : 青チャンネル強度画像（1チャンネルグレースケール画像）．
+  - __image/g_channnel__ : 緑チャンネル強度画像（1チャンネルグレースケール画像）．
+  - __image/r_channnel__ : 赤チャンネル強度画像（1チャンネルグレースケール画像）．
 - ノード起動方法（how to excute）  
 ```
 ros2 run chinorobo_ros2_opencv_01 image_splitter_node
@@ -30,9 +30,9 @@ ros2 run chinorobo_ros2_opencv_01 image_splitter_node
 ### __*image_grayscale2binary_node*__
 1チャンネル画像を閾値に従って二値化処理し，１チャンネル二値化画像を出力する．
 - サブスクライバー（Subscribers）
-  - *image_grayscale*: 1チャンネルグレースケール画像
+  - __image_grayscale__: 1チャンネルグレースケール画像
 - パブリッシャー（Publishers）
-  - *image_binary*: 1チャンネル二値化画像
+  - __image_binary__: 1チャンネル二値化画像
 - ノード起動方法（how to excute）  
 ```
 ros2 run chinorobo_ros2_opencv_01 image_grayscale2binary_node
